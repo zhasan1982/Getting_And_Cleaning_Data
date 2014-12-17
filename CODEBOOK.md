@@ -1,5 +1,5 @@
-# THE EXPERIMENT AND DATA COLLECTION
-====================================
+THE EXPERIMENT AND DATA COLLECTION
+==================================
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities wearing a smartphone (Samsung Galaxy S II) on the waist. These activities are:
 
 - Walking
@@ -12,8 +12,8 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 Using the embedded accelerometer and gyroscope in the smartphone, 3-axial linear acceleration and 3-axial angular velocity measurements were captured at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
 
-# FILES IN UCI HAR DATASET USED IN THIS ANALYSIS
-================================================
+FILES IN UCI HAR DATASET USED IN THIS ANALYSIS
+==============================================
 - 'working_data_files\UCI HAR Dataset\features_info.txt'
 - 'working_data_files\UCI HAR Dataset\features.txt'
 - 'working_data_files\UCI HAR Dataset\activity_labels.txt'
@@ -25,37 +25,37 @@ Using the embedded accelerometer and gyroscope in the smartphone, 3-axial linear
 - 'working_data_files\UCI HAR Dataset\test/subject_test.txt'
 
 
-# TRANSFORMATIONS PERFORMED ON UCI HAR DATA
-===========================================
+TRANSFORMATIONS PERFORMED ON UCI HAR DATA
+=========================================
 
-## Transformations Performed on Test Data
------------------------------------------
+Transformations Performed on Test Data
+--------------------------------------
 1. Applied column names from features.txt
 2. Appended activity information from y_test.txt and activity_labels.txt
 3. Appended subject information from subject_test.txt
 4. Appended set name "Test" to each record in the data frame
 
-## Transformations Performed on Training Data
----------------------------------------------
+Transformations Performed on Training Data
+------------------------------------------
 1. Applied column names from features.txt
 2. Appended activity information from y_train.txt and activity_labels.txt
 3. Appended subject information from subject_train.txt
 4. Appended set name "Training" to each record in the data frame
 
-## Merge and Subset Data
-------------------------
+Merge and Subset Data
+---------------------
 1. Merged test and training data into a single data frame
 2. Saved this data as UCI_HAR_Complete_Raw_Data.txt
 3. Subset data for only those columns containing mean and standard deviation measurements (66 columns)
 
-## Produce Tidy Data
---------------------
+Produce Tidy Data
+-----------------
 1. Used aggregate to calculate a mean for each of the 66 columns grouped by subject and activity
 2. Saved this data as UCI_HAR_Tidy_Data.txt
 
 
-# THE TIDY DATASET
-==================
+THE TIDY DATASET
+================
 The tidy dataset consist of 66 measurement variables and two categorization variables, Subject and Activity. Measurements include estimates for mean and standard deviation for the following signals:
 
 - tBodyAcc-XYZ
@@ -79,11 +79,11 @@ The tidy dataset consist of 66 measurement variables and two categorization vari
 Raw data is collected for each subject (30 in total) over a period of time for the six activities. The script takes this raw data file (10,000+ records) and calculates an average of the mean and standard deviation estimates for each of the above mentioned 33 signals (signals ending with XYZ should be counted three times) grouped for each activity performed by each subject to produce the tidy dataset.
 
 
-# VARIABLES IN THE TIDY DATASET
-===============================
+VARIABLES IN THE TIDY DATASET
+=============================
 
-## Key
-------
+Key
+---
 - TimeDom: Time domain signals
 - FreqDom: Frequency domain signals
 - Acc: Acceleration
@@ -92,8 +92,8 @@ Raw data is collected for each subject (30 in total) over a period of time for t
 - StdDev: Standard deviation
 - X/Y/Z: Signal axis
 
-## List of Variables
---------------------
+List of Variables
+-----------------
 1. subject
 2. Activity
 3. TimeDom_BodyAcc_Mean_X
