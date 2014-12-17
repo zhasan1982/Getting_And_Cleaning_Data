@@ -81,6 +81,7 @@ Note: Packages 1 to 3 are generally loaded when R or RStudio is opened. Verify t
 INSTRUCTIONS
 ============
 Instruction are provided for downloading the script and running it in RStudio:
+
 1. Download the run_analysis.R file from 'https://github.com/zhasan1982/Getting_And_Cleaning_Data' 
 2. Place the downloaded file in any directory on your computer (preferably an empty directory)
 3. Open RStudio
