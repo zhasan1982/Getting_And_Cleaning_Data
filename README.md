@@ -69,11 +69,11 @@ The script was developed using the following software:
 
 REQUIRED R PACKAGES
 ===================
-1) base
-2) utils
-3) stats
-4) dplyr
-5) tidyr
+1. base
+2. utils
+3. stats
+4. dplyr
+5. tidyr
 
 Note: Packages 1 to 3 are generally loaded when R or RStudio is opened. Verify these packages are loaded by running 'search()'. The last two packages are loaded during the execution of the script.
 
