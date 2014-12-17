@@ -1,5 +1,5 @@
 ##### Set working directory #####
-setwd("C:\\Users\\Zeeshan\\Documents\\Personal\\GACD")
+setwd("C:\\Users\\ZH\\Documents\\Getting_And_Cleaning_Data")
 
 ##### Load required packages #####
 if (require(dplyr)==FALSE) {
